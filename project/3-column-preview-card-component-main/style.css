@@ -1,0 +1,114 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-light-gray);
+}
+
+.container{
+    display: flex;
+    width: 55rem;
+    margin-top:10rem;
+}
+h1{
+    color:var(--Very-light-gray);
+    font-family: 'Big Shoulders Display',sans-serif;
+    font-weight: 700;
+    margin:1.5rem 0;
+    text-transform: uppercase;
+}
+p{
+    color: var(--white-paragraphs);
+    font-size: 15px;
+    font-family: 'Lexend Deca',sans-serif;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+button{
+    border:none;
+    border-radius:1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size:16px;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.sedan{
+    background-color: var(--bright-orange);
+    padding:3rem;
+    border-radius: 1rem 0 0 1rem;
+}
+.sedan button{
+    color:var(--bright-orange);
+}
+.sedan button:hover{
+    color:var(--Very-light-gray);
+    background-color: var(--bright-orange);
+    border:var(--Very-light-gray) 1.5px solid;
+    cursor: pointer;
+}
+.suv{
+    background-color: var(--Dark-cyan);
+    padding:3rem;
+}
+.suv button{
+    color:var(--Dark-cyan);
+}
+.suv button:hover{
+    color:var(--Very-light-gray);
+    background-color: var(--Dark-cyan);
+    border:var(--Very-light-gray) 1.5px solid;
+    cursor: pointer;
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    padding:3rem;
+    border-radius:0 1rem 1rem 0;
+}
+.luxury button{
+    color: var(--Very-dark-cyan);
+}
+.luxury button:hover{
+    color:var(--Very-light-gray);
+    background-color: var(--Very-dark-cyan);
+    border:var(--Very-light-gray) 1.5px solid;
+    cursor: pointer;
+}
+.attribution { 
+    margin-top:1rem;
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:500px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        width:20rem;
+        margin-top:2.5rem;
+    }
+    .sedan{
+        border-radius: 1rem 1rem 0 0;
+    }
+    .luxury{
+        border-radius:0 0 1rem 1rem;
+    }
+}
